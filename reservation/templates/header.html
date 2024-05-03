@@ -3,14 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Header</title>
+    <title>Header|{% block 'title'%}{% endblock%}</title>
 </head>
 <body>
-
+{% block 'body'%}
 <img src="{% static 'images/uop.png' %}"alt="logo" style="width:85px" >
 <h2> Welcome 😊 </h2>
 
 <a href="{% url 'add' %}">Add page</a>
 
+<a href="{% url 'add' %}">Add page</a>
+{% endblock %}
 </body>
 </html>

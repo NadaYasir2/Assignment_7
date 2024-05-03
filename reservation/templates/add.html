@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add</title>
-</head>
-<body>
+{% extends 'header.html' %}
+{%block 'body'%}
+{% block 'title' %} {% endblock %}
+<a href="{% url 'header' %}">Home</a>
 
-<h1> Hiiii </h1>
+<h1> Hi </h1>
 
-</body>
-</html>
+{%endblock%}
