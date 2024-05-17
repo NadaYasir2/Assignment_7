@@ -1,0 +1,12 @@
+{% extends 'header.html' %}
+{%block 'body'%}
+{% block 'title' %}Client List{% endblock %}
+
+<h2>Client List</h2>
+    <ul>
+        {% for client in clients %}
+        <li>{{ client.name }} - {{ client.email }}</li>
+        {% endfor %}
+    </ul>
+
+{%endblock%}
